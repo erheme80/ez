@@ -25,12 +25,12 @@ class UniversityController extends Controller
         return view('admin.university.show', compact('university'));  // Pass the university to the view
     }
 
-
     public function store(Request $request)
     {
-        $request->validate([
+        // dd($request->all());
+        $validatedData =request()->validate([
             'name' => 'required|string|max:255',
-            'thumbnail' => 'nullable|image|mimes:jpg,jpeg,png,gif,svg|max:2048',
+            'thumbnail' => 'nullable|image|max:2048',
             'description' => 'required|string',
             'location' => 'required|string|max:255',
             'established_at' => 'nullable|date',
@@ -47,7 +47,7 @@ class UniversityController extends Controller
             'scholarships' => 'nullable|string',
             'status' => 'required|in:active,inactive',
         ]);
-        $data = $request->except('thumbnail');  
+  
 
         if ($request->hasFile('thumbnail')) {
             $file = $request->file('thumbnail');
@@ -58,7 +58,25 @@ class UniversityController extends Controller
             $data['thumbnail'] = null;
         }
 
-        University::create($data);
+        University::create([
+            'name' => $validatedData['name'],
+            'thumbnail' => $data['thumbnail'], // Use $data['thumbnail'] since you're handling the file upload separately
+            'description' => $validatedData['description'],
+            'location' => $validatedData['location'],
+            'established_at' => $validatedData['established_at'] ?? null,
+            'ranking' => $validatedData['ranking'] ?? null,
+            'tuition_fee' => $validatedData['tuition_fee'] ?? null,
+            'student_population' => $validatedData['student_population'] ?? null,
+            'faculty_count' => $validatedData['faculty_count'] ?? null,
+            'courses_offered' => $validatedData['courses_offered'] ?? null,
+            'contact_email' => $validatedData['contact_email'] ?? null,
+            'contact_phone' => $validatedData['contact_phone'] ?? null,
+            'website' => $validatedData['website'] ?? null,
+            'address' => $validatedData['address'] ?? null,
+            'admission_requirements' => $validatedData['admission_requirements'] ?? null,
+            'scholarships' => $validatedData['scholarships'] ?? null,
+            'status' => $validatedData['status'],
+        ]);
      
         return redirect()->route('admin.university.index')->with('success', 'University added successfully.');
     }

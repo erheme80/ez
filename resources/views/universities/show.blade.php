@@ -100,62 +100,246 @@
 
     <main class="main">
 
-
-        <section id="services" class="services section">
-
-            <!-- Section Title -->
+        <section id="нүүр" class="hero section dark-background">
+            <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper.jpg') }}" alt="" data-aos="fade-in">
+            <div class="container">
+                <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-6 col-lg-8">
+                        <h2>{{ $university->name}}<span>.</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="Бидний тухай" class="about section">
             <div class="container section-title" data-aos="fade-up">
-                <h2>laram</h2>
-                <p>loram</p>
-            </div><!-- End Section Title -->
+                <div class="senter">
+                    <p>мэдээлэл</p>
+                </div>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="senter">
+                        <h3>мэндчилгээ</h3>
+                        <p>{{ $university->description }}</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section id="features" class="features section">
 
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
-                        <div class="white-box">
-                            <!-- University Description -->
-                            <h3>Тайлбар</h3>
-                            <p>{{ $university->description }}</p>
 
-                            <!-- University Status -->
-                            <h4>Сургуулийн Төлөв</h4>
-                            <p>Байршил: {{ $university->location }}</p>
-                            <p>Тамга: {{ $university->established_at }}</p>
-                            <p>Ранк: {{ $university->rank }}</p>
-                            <p>Оюутны Тоо: {{ $university->student_population }}</p>
-                            <p>Факультет Тоо: {{ $university->faculty_count }}</p>
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="senter">
+                            <img src="{{ asset($university->thumbnail) }}" alt="{{ $university->name }}" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
 
-                            <!-- Contact Information -->
-                            <h4>Холбоо Барих Мэдээлэл</h4>
-                            <p>Имэйл: {{ $university->contact_email }}</p>
-                            <p>Утас: {{ $university->contact_phone }}</p>
-                            <p>Вэбсайт: <a href="{{ $university->website }}"
-                                    target="_blank">{{ $university->website }}</a></p>
-
-                            <!-- Address Section -->
-                            <h4>Хаяг</h4>
-                            <p>{{ $university->address }}</p>
-
-                            <!-- Admission Requirements -->
-                            <h4>Элсэлтийн Шаардлага</h4>
-                            <p>{{ $university->admission_requirements }}</p>
-
-                            <!-- Housing Options -->
-                            <h4>Орон Байршлын Сонголт</h4>
-                            <p>{{ $university->housing_options }}</p>
-
-                            <!-- Back Button -->
-                            <!-- Back Button -->
-                            <div class="form-group mt-3">
-                                <a href="{{ route('universities.index') }}" class="btn btn-secondary">Буцах</a>
+                        <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div>
+                                <h4>Элсэлтийн Шаардлага</h4>
+                                <p>{{ $university->admission_requirements }}</p>
                             </div>
+                        </div><!-- End Features Item-->
 
+                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+                            <div>
+                                <h4>Орон Байршлын Сонголт</h4>
+                                <p>Дотуур байрууд: 
+                                    @if($university->status == 'active')
+                                        боломжтой
+                                    @else
+                                        боломжгүй
+                                    @endif
+                                </p>
+                            </div>
+                        </div><!-- End Features Item-->
+
+                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+                            <div>
+                                <h4>зэрэглэл</h4>
+                                <p>2024 оны Монголын их дээд сургуулиудын зэрэглэлээр {{ $university->name}} {{ $university->ranking }}-р байранд орсон</p>
+                            </div>
+                        </div><!-- End Features Item-->
+
+                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+
+                            <div>
+                                <h4>Сургуулийн Төлөв</h4>
+                                <p>Байршил: {{ $university->location }}</p>
+                            </div>
+                        </div><!-- End Features Item-->
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <section id="stats" class="stats section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4 align-items-center justify-content-between">
+
+                    <div class="col-lg-5">
+                        <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_4.jpg') }}" alt=""
+                            class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div>
+                                <h4>Үүсгэн Байгуулагдсан Он</h4>
+                                <p>{{ $university->established_at }}</p>
+                            </div>
+                        </div><!-- End Features Item-->
+
+                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+                            <div>
+                                <h4>Нийт Оюутны Тоо</h4>
+                                <p>{{ $university->student_population }}</p>
+                            </div>
+                        </div><!-- End Features Item-->
+
+                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+                            <div>
+                                <h4>Нийт Багш Нарын Тоо</h4>
+                                <p>{{ $university->faculty_count }}</p>
+                            </div>
+                        </div><!-- End Features Item-->
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        
+        <section id="call-to-action" class="call-to-action section dark-background">
+
+            <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_3.jpg') }}" alt="">
+
+            <div class="container">
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h3>үндсэн хуудас</h3>
+                            <p>Хэрэв та илүү олон их дээд сургуулийн сонголтуудыг харахыг хүсэж байвал, 
+                                илүү дэлгэрэнгүй мэдээлэлтэй танилцахын тулд үндсэн хуудас руу буцаж, 
+                                сонголтоо өргөжүүлнэ үү.</p>
+                            <a class="cta-btn" href="{{ route('universities.index') }}">үндсэн хуудас</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </section><!-- /Services Section -->
+        </section>
+
+        <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <p>Холбоо Барих Мэдээлэл</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Хаяг</h3>
+                                <p>{{ $university->address }}</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Холбоо Барих Утас</h3>
+                                <p>Утас: {{ $university->contact_phone }}</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>Имэйл: {{ $university->contact_email }}</p>
+                            </div>
+                        </div><!-- End Info Item -->
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                            <i class="bi bi-globe flex-shrink-0"></i> <!-- Use an appropriate icon for the website -->
+                            <div>
+                                 <h3>Вебсайт руу орох</h3>
+                                <p>Вэбсайт: <a href="{{ $university->website }}"
+                                    target="_blank">{{ $university->website }}</a></p> <!-- Link to the university's website -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                        required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Send Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section>        
 
     </main>
 
