@@ -20,6 +20,10 @@ class Unicontroller extends Controller
     {
         $university = University::with('departments')->findOrFail($id);
         return view('university', compact('university'));
+
+        $university = University::findOrFail($id);
+
+        return view('universities.show', compact('university'));
     }
 
 }
