@@ -60,7 +60,7 @@ class UniversityController extends Controller
 
         University::create([
             'name' => $validatedData['name'],
-            'thumbnail' => $data['thumbnail'], // Use $data['thumbnail'] since you're handling the file upload separately
+            'thumbnail' => $data['thumbnail'], 
             'description' => $validatedData['description'],
             'location' => $validatedData['location'],
             'established_at' => $validatedData['established_at'] ?? null,

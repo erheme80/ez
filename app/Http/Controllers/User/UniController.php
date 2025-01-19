@@ -16,10 +16,9 @@ class Unicontroller extends Controller
     }
     public function show($id)
     {
-        // Find the university by ID
+
         $university = University::findOrFail($id);
 
-        // Return the view and pass the university data
         return view('universities.show', compact('university'));
     }
 
