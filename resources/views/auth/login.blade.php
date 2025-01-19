@@ -43,7 +43,7 @@
                 </div>
                 <div class="input_wrapper"></div>
                     <label for="password" class="input-submit">
-                        <x-primary-button class="input-submit" value="login">
+                        <x-primary-button type="submit" class="input-submit" value="Login">
                             {{ __('Log in') }}
                         </x-primary-button>
                     </label>
@@ -52,3 +52,5 @@
         </div>
     </div>
 </x-guest-layout>
+
+

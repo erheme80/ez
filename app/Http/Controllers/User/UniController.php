@@ -12,15 +12,14 @@ class Unicontroller extends Controller
     public function index()
     {
         $universities = University::all();
-        return view('welcome', compact('universities'));
+        $uni = University::whereIn('id', [1, 2, 3])->get();
+
+        return view('welcome', compact('universities','uni'));
     }
     public function show($id)
     {
-        // Find the university by ID
-        $university = University::findOrFail($id);
-
-        // Return the view and pass the university data
-        return view('universities.show', compact('university'));
+        $university = University::with('departments')->findOrFail($id);
+        return view('university', compact('university'));
     }
 
 }

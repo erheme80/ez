@@ -10,9 +10,19 @@ use App\Http\Controllers\Admin\TuitionController;
 use App\Http\Controllers\Admin\ScholarshipController;
 use App\Http\Controllers\User\Unicontroller;
 
+
 // In web.php
 Route::get('/', [UniController::class, 'index'])->name('universities.index');
 Route::get('/university/{id}', [UniController::class, 'show'])->name('university.show');
+Route::get('/university/{id}/scholarships', [UniversityController::class, 'showScholarships'])->name('university.scholarships');
+Route::get('/university/{id}/departments', [UniversityController::class, 'showDepartments'])->name('university.departments');
+Route::get('/university/{universityId}/departments/{departmentId}/courses', [UniversityController::class, 'showCourses'])->name('university.departments.courses');
+
+// Route::get('/register', [RegisteredUserController::class, 'create'])
+//     ->middleware('guest')
+//     ->name('register');
+
+// Route::post('/register', [RegisteredUserController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -37,8 +47,9 @@ Route::middleware(['auth',AdminMiddleware::class])->prefix('admin')->group(funct
     Route::controller(UniversityController::class)->group(function() {
         Route::get('university', 'index')->name('admin.university.index');
         Route::get('university/create', 'create')->name('admin.university.create');
-        Route::get('university/edit/{id}', 'edit')->name('admin.university.edit');
-        Route::post('university/store', 'store')->name('admin.university.store');
+        Route::get('university/{id}/edit', 'edit')->name('admin.university.edit');
+        Route::put('university/{id}', 'update')->name('admin.university.update');
+        Route::post('university', 'store')->name('admin.university.store');  
         Route::delete('university/{id}', 'destroy')->name('admin.university.destroy');
     });
     

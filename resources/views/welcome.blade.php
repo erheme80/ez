@@ -28,8 +28,8 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-
     <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
 
@@ -125,7 +125,9 @@
 
                 <div class="row gy-4">
                     <div class="col-lg-6 order-1 order-lg-2">
-                        <img src="{{ asset('assets/img/en-800654.1728984517.b.jpg') }}" class="img-fluid" alt="">
+                        <div class="borderk">
+                            <img src="{{ asset('assets/img/pexels-pixabay-267582.jpg') }}" class="img-fluid" alt="">
+                        </div>
                     </div>
                     <div class="col-lg-6 order-2 order-lg-1 content">
                         <h3>Бид юуг зориж байна вэ?</h3>
@@ -135,17 +137,16 @@
                         <ul>
                             <li><i class="bi bi-check2-all"></i> <span>Амар, хялбар байлгах нь бидний зорилт.</span>
                             </li>
-                            <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</span></li>
-                            <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                    storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Сурагчдад хамгийн сайн боловсролын боломжийг
+                                    олгох.</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Сурагчид өөрсдийн сонирхол, хэрэгцээнд тулгуурлан
+                                    зөв сургуулийг сонгоход нь туслах.</span></li>
                         </ul>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident
+                            "College Choice" нь Монголын залуусыг хамгийн сайн боловсрол
+                            олж авахад нь туслах зорилготой. Бид зөвхөн их дээд сургууль,
+                            коллежийн мэдээлэл өгөхөөс гадна тэдгээрийн давуу болон сул талуудыг
+                            тодорхойлж, сонголт хийхэд нь хялбар болгодог.
                         </p>
                     </div>
                 </div>
@@ -163,42 +164,39 @@
 
                 <div class="row gy-4">
                     <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_2.jpg') }}" alt="">
+                        <div class="borderk">
+                            <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_2.jpg') }}" alt="">
+                        </div>
                     </div>
                     <div class="col-lg-6">
 
                         <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up"
                             data-aos-delay="200">
                             <div>
-                                <h4>Est labore ad</h4>
-                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                <h4>Манай вэбсайт</h4>
+                                <p>Манай вэбсайт нь хэрэглэгчийн туршлагыг хамгийн түрүүнд тавьж, сургуулийн мэдээллийг
+                                    илүү хүртээмжтэй, ойлгомжтой байдлаар ашиглах боломжийг олгодог.
                                 </p>
                             </div>
                         </div><!-- End Features Item-->
 
                         <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
                             <div>
-                                <h4>Harum esse qui</h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                <h4>сургуулиудын мэдээлэл</h4>
+                                <p>Бид зөвхөн сургуулиудын мэдээллийг түгээхээс гадна тэдгээрийн сургалтын хөтөлбөр,
+                                    элсэлтийн шаардлага, хөтөлбөрийн агуулга, сургуулийн нөхцөл байдлын талаар
+                                    дэлгэрэнгүй мэдээллийг өгөх зорилготой.
                                 </p>
                             </div>
                         </div><!-- End Features Item-->
 
                         <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
                             <div>
-                                <h4>Aut occaecati</h4>
-                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                <h4>сурагчдад</h4>
+                                <p>Бид сурагчдад сургуулиудын давуу болон сул талуудыг тодорхойлж, тэрхүү мэдээллээр нь
+                                    үндэслэн шийдвэр гаргахад тусалдаг. </p>
                             </div>
                         </div><!-- End Features Item-->
-
-                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-
-                            <div>
-                                <h4>Beatae veritatis</h4>
-                                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                            </div>
-                        </div><!-- End Features Item-->
-
                     </div>
                 </div>
 
@@ -211,19 +209,16 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>laram</h2>
-                <p>loram</p>
+                <p>Шилдэг сургуулиуд</p>
             </div><!-- End Section Title -->
 
             <div class="container">
-
                 <div class="row gy-4">
-                    @foreach ($universities as $university)
+                    @foreach ($uni as $university)
                         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                             <div class="service-item position-relative">
                                 <div class="icon">
-                                    <img src="{{ asset('assets/img/NationalUniversityMongoliaLogo.jpg') }}"
-                                        class="img-fluid" alt="">
+                                    <img src="{{ asset($university->thumbnail) }}" class="img-fluid" alt="">
                                 </div>
                                 <a href="{{ route('university.show', $university->id) }}" class="stretched-link">
                                     <h3>{{ $university->name }}</h3>
@@ -248,11 +243,9 @@
                 <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                     <div class="col-xl-10">
                         <div class="text-center">
-                            <h3>loram asdaco</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum.</p>
-                            <a class="cta-btn" href="#">Call To Action</a>
+                            <h3>Бидний тухай</h3>
+                            <p>Бидний талаарх мэдээллийг энд дарж үзнэ үү.</p>
+                            <a class="cta-btn" href="#">Бидний талаар</a>
                         </div>
                     </div>
                 </div>
@@ -265,8 +258,7 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <p>Check our Portfolio</p>
+                <p>Бүх сургууль</p>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -274,132 +266,29 @@
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
                     <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter="*" class="filter-active">бүх их сургууль</li>
                         <li data-filter=".filter-app">App</li>
                         <li data-filter=".filter-product">Card</li>
                         <li data-filter=".filter-branding">Web</li>
                     </ul><!-- End Portfolio Filters -->
 
                     <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
-                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Product 1</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Branding 1</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 2</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
-                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Product 2</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Branding 2</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
-                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Product 3</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Branding 3</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
+                        @foreach ($universities as $university)
+                            <div class="col-lg-3 col-md-4 portfolio-item isotope-item filter-app">
+                                <!-- Using inline styles to make the image responsive and maintain aspect ratio -->
+                                <div class="image-container">
+                                    <img src="{{ asset($university->thumbnail) }}" alt="{{ $university->name }}"
+                                        style="width: 50%; height: auto; object-fit: cover; border-radius: 8px;">
+                                </div>
+                                <div class="portfolio-info">
+                                    <a href="{{ route('university.show', $university->id) }}" class="stretched-link">
+                                        <h4>{{ $university->name }}</h4>
+                                    </a>
+                                </div>
+                            </div><!-- End Portfolio Item -->
+                        @endforeach
                     </div><!-- End Portfolio Container -->
+
 
                 </div>
 
@@ -411,70 +300,33 @@
         <section id="stats" class="stats section">
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-
                 <div class="row gy-4 align-items-center justify-content-between">
-
                     <div class="col-lg-5">
-                        <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_4.jpg') }}" alt=""
-                            class="img-fluid">
+                        <div class="borderk">
+                            <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_4.jpg') }}" alt=""
+                                class="img-fluid">
+                        </div>
                     </div>
 
                     <div class="col-lg-6">
 
-                        <h3 class="fw-bold fs-2 mb-3">Voluptatem dignissimos provident quasi</h3>
+                        <h3 class="fw-bold fs-2 mb-3">Яагаад Биднийг Сонгох Вэ?</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            Шударга, Шилдэг Мэдээлэл
+                            Манай вэбсайт нь зөвхөн хэрэгтэй мэдээллийг өгдөг, өөрт тохирсон сонголтыг хийхэд чиглэсэн
+                            үнэн зөв мэдээлэлтэй.
                         </p>
-
-                        <div class="row gy-4">
-
-                            <div class="col-lg-6">
-                                <div class="stats-item d-flex">
-                                    <i class="bi bi-emoji-smile flex-shrink-0"></i>
-                                    <div>
-                                        <span data-purecounter-start="0" data-purecounter-end=""
-                                            data-purecounter-duration="1" class="purecounter"></span>
-                                        <p>consequuntur quae</p>
-                                    </div>
-                                </div>
-                            </div><!-- End Stats Item -->
-
-                            <div class="col-lg-6">
-                                <div class="stats-item d-flex">
-                                    <i class="bi bi-journal-richtext flex-shrink-0"></i>
-                                    <div>
-                                        <span data-purecounter-start="0" data-purecounter-end=""
-                                            data-purecounter-duration="1" class="purecounter"></span>
-                                        <p>adipisci atque cum quia aut</p>
-                                    </div>
-                                </div>
-                            </div><!-- End Stats Item -->
-
-                            <div class="col-lg-6">
-                                <div class="stats-item d-flex">
-                                    <i class="bi bi-headset flex-shrink-0"></i>
-                                    <div>
-                                        <span data-purecounter-start="0" data-purecounter-end=""
-                                            data-purecounter-duration="1" class="purecounter"></span>
-                                        <p>aut commodi quaerat</p>
-                                    </div>
-                                </div>
-                            </div><!-- End Stats Item -->
-
-                            <div class="col-lg-6">
-                                <div class="stats-item d-flex">
-                                    <i class="bi bi-people flex-shrink-0"></i>
-                                    <div>
-                                        <span data-purecounter-start="0" data-purecounter-end=""
-                                            data-purecounter-duration="1" class="purecounter"></span>
-                                        <p>rerum asperiores dolor</p>
-                                    </div>
-                                </div>
-                            </div><!-- End Stats Item -->
-
-                        </div>
-
+                        <p>
+                            Амжилттай Оюутан Хөгжил
+                            Манай баг нь таныг төгсөж, боловсролын сонголтонд орох хүртэл дэмжиж, амжилттай суралцах үйл
+                            явцыг удирдах болно.
+                        </p>
+                        <p>
+                            гийн Хялбар Ажиллах Байдал
+                            Хэрэглэхэд хялбар интерфэйс, оновчтой хайлтын систем болон гарын авлагаас гадна
+                            боловсролын салбарын шилдэг програмуудыг ашиглан оюутнуудад зориулсан олон боломжуудыг танд
+                            санал болгож байна.
+                        </p>
                     </div>
 
                 </div>
@@ -506,108 +358,119 @@
             }
           }
         </script>
-            <div class="swiper-wrapper">
+                    <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <img src="" class="testimonial-img" alt="">
-                        <h3></h3>
-                        <h4></h4>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                Maecen aliquam, risus at semper.</span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                    </div>
-                </div><!-- End testimonial item -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <h3>Сургуулийн Сонголт Вэбсайт</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>"Сургуулийн Сонголт" нь Монголын оюутнуудад боловсролын салбарт хамгийн сайн
+                                        сонголтыг
+                                        хийхэд туслах зорилготой вэбсайт юм. Энэ нь төгсөх ангийн сурагчид болон өөрийн
+                                        боловсролын түвшингээ ахиулах хүсэлтэй хүмүүст зориулагдсан.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <img src="" class="testimonial-img" alt="">
-                        <h3></h3>
-                        <h4></h4>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
-                                quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
-                                irure amet legam anim culpa.</span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                    </div>
-                </div><!-- End testimonial item -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <h3>Манай Зорилго</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Оюутнуудад Монгол Улсын болон олон улсын сургуулиудын тухай хамгийн чухал
+                                        мэдээллийг хүргэх.
+                                        Тэдэнд хэрэгтэй шаардлага, элсэлтийн мэдээлэл, амжилттай суралцах боломжуудыг
+                                        олгох.
+                                        Үндэсний болон гадаад их сургууль, коллежийн мэдээлэл, сургалтын хөтөлбөр,
+                                        оюутны байр,
+                                        тэтгэлэг, суралцах нөхцөл, хямд үнэ болон бусад олон мэдээллийг өгөх.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <img src="" class="testimonial-img" alt="">
-                        <h3></h3>
-                        <h4></h4>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
-                                quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore
-                                quis sint minim.</span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                    </div>
-                </div><!-- End testimonial item -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <h3>Түргэн, Хялбар Хүснэгтүүд</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Сургуулийн сонголт хийх нь амархан болох болно.
+                                        Манай вэбсайт нь бүхий л шаардлагатай мэдээллийг нэг дор оруулсан бөгөөд та
+                                        сургуулиудыг өөрийн шаардлагад нийцүүлэн хайж олох боломжтой.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <img src="" class="testimonial-img" alt="">
-                        <h3></h3>
-                        <h4></h4>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
-                                quem dolore labore illum veniam.</span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                    </div>
-                </div><!-- End testimonial item -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <h3>Их Сургууль, Коллежийн Мэдээлэл</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Та оюутан болж элсэн орсон их сургууль, коллежийнхаа талаар
+                                        дэлгэрэнгүй мэдээллийг авах боломжтой. Тусгаарласан эрэмбэ, курс,
+                                        шилдэг хөтөлбөр, боловсролын стандартыг мэдэх нь чухал.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <img src="" class="testimonial-img" alt="">
-                        <h3></h3>
-                        <h4></h4>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <h3>Элсэлтийн Шаардлага ба Процесс</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Манай вэбсайт нь сургуулиудын элсэлтийн шаардлага, шаардлагатай
+                                        бичиг баримт, гэрчилгээ болон шалгалт, өдөр, хугацаа, зарим
+                                        суралцах төвшингүүдийн мэдээллийг агуулдаг.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <h3>Тэтгэлэг ба Санхүүгийн Дэмжлэг</h3>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Оюутнуудад сургалтын төлбөрийг хөнгөлөх эсвэл тэтгэлэгт хамрагдах
+                                        боломжуудыг олгож, санхүүгийн хүндрэлийг даван туулахад туслах.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
                         </div>
-                        <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
-                                noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
-                                esse veniam culpa fore nisi cillum quid.</span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
                     </div>
-                </div><!-- End testimonial item -->
-            </div>
         </section><!-- /Testimonials Section -->
 
 
@@ -616,8 +479,7 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Contact</h2>
-                <p>Contact Us</p>
+                <p>холбоо барих</p>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">

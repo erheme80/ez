@@ -26,4 +26,9 @@ class University extends Model
         'admission_requirements',
         'status',
     ];
+
+    public function departments()
+    {
+        return $this->hasMany(Department::class);
+    }
 }

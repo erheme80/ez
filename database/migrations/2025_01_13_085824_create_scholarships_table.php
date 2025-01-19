@@ -21,9 +21,6 @@ return new class extends Migration
             $table->text('description')->nullable(); // Description of the scholarship
             $table->text('eligibility')->nullable(); // Eligibility requirements
             $table->date('deadline')->nullable(); // Deadline for the scholarship
-            $table->foreignId('university_id')  
-                  ->constrained('universities') 
-                  ->onDelete('cascade'); 
             $table->timestamps();
         });
     }

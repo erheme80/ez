@@ -23,6 +23,7 @@
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #f7efc2;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -734,7 +735,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background: linear-gradient(to right, #fbeeba, #e4b674);
   padding: 60px 0;
   scroll-margin-top: 80px;
   overflow: clip;
@@ -994,9 +995,9 @@ section,
 
 /*--------------------------------------------------------------
 # Services Section
---------------------------------------------------------------*/
+--------------------------------------------------------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color: var(--nav-dropdown-hover-color);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
@@ -1702,4 +1703,52 @@ section,
 --------------------------------------------------------------*/
 .senter{
   text-align: center;
+}
+
+.col-lg-4{
+  text-align: center;
+}
+
+.light-background {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.borderk img{
+  border-radius: 30px;
+  border: none;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  border-radius: 8px;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.line {
+  border: var(--bs-border-width) var(--bs-border-style) var(--heading-color) !important;
+}
+
+.titles {
+  border: 1px black;
+  border-radius: 30px 30px 0 0;
+  background-color: rgb(139 0 0);
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+  padding: 15px;
+}
+
+.descriptions {
+  border: 1px black;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 30px 30px;
+  padding: 20px;
+  margin-bottom: 40px;
 }

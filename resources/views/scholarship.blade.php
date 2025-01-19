@@ -44,10 +44,11 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="{{route('universities.index')}}" class="active">Нүүр<br></a></li>
-                    <li><a href="#Бидний тухай">Бидний тухай</a></li>
-                    <li><a href="#services">Шилдэг сургуулиуд</a></li>
-                    <li><a href="#portfolio">Бүх сургууль</a></li>
+                    <li><a href="{{ route('universities.index') }}">үндсэн хуудас</a></li>
+                    <li><a href="#нүүр" class="active">Нүүр<br></a></li>
+                    <li><a href="#Бидний тухай">мэдээлэл</a></li>
+                    <li><a href="#салбар">салбар сургууль ууд</a></li>
+                    <li><a href="#үндсэн">үндсэн хуудас</a></li>
                     <li class="dropdown"><a href="#"><span>Мэргэжлүүд</span> <i
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
@@ -67,7 +68,7 @@
                             <li><a href="#">Dropdown 4</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact">Хүсэлт</a></li>
+                    <li><a href="#contact">Холбоо Барих Мэдээлэл</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -101,7 +102,7 @@
     <main class="main">
 
         <section id="нүүр" class="hero section dark-background">
-            <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper.jpg') }}" alt="" data-aos="fade-in">
+            <img src="{{ asset('assets/img/olz.jpg') }}" alt="" data-aos="fade-in">
             <div class="container">
                 <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-xl-6 col-lg-8">
@@ -110,147 +111,25 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="Бидний тухай" class="about section">
-            <div class="container section-title" data-aos="fade-up">
-                <div class="senter">
-                    <p>мэдээлэл</p>
-                </div>
-            </div>
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row gy-4">
-                    <div class="senter">
-                        <h3>мэндчилгээ</h3>
-                        <p>{{ $university->description }}</p>
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row gy-4 align-items-center justify-content-between">
+                        <h1>{{ $university->name }}Д ЗОРИУЛСАН ТЭТГЭЛЭГ</h1>
+                        <ul>
+                            @foreach ($scholarships as $scholarship)
+                                <div class="titles">
+                                <h3 style="color: white; text-align: center;">{{ $scholarship->name }}</h3>
+                                </div>
+                                <div class="line"></div>
+                                <div class="descriptions">
+                                    <li style="color: black; text-center">{{ $scholarship->description }}</li>
+                                </div>
+                            @endforeach
+                        </ul>
                     </div>
                 </div>
-
-            </div>
-
         </section>
-        
-        <section id="features" class="features section">
-
-            <div class="container">
-
-                <div class="row gy-4">
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="senter">
-                            <img src="{{ asset($university->thumbnail) }}" alt="{{ $university->name }}" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-
-                        <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up"
-                            data-aos-delay="200">
-                            <div>
-                                <h4>Элсэлтийн Шаардлага</h4>
-                                <p>{{ $university->admission_requirements }}</p>
-                            </div>
-                        </div><!-- End Features Item-->
-
-                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-                            <div>
-                                <h4>Орон Байршлын Сонголт</h4>
-                                <p>Дотуур байрууд: 
-                                    @if($university->status == 'active')
-                                        боломжтой
-                                    @else
-                                        боломжгүй
-                                    @endif
-                                </p>
-                            </div>
-                        </div><!-- End Features Item-->
-
-                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-                            <div>
-                                <h4>зэрэглэл</h4>
-                                <p>2024 оны Монголын их дээд сургуулиудын зэрэглэлээр {{ $university->name}} {{ $university->ranking }}-р байранд орсон</p>
-                            </div>
-                        </div><!-- End Features Item-->
-
-                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-
-                            <div>
-                                <h4>Сургуулийн Төлөв</h4>
-                                <p>Байршил: {{ $university->location }}</p>
-                            </div>
-                        </div><!-- End Features Item-->
-
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        
-        <section id="stats" class="stats section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4 align-items-center justify-content-between">
-
-                    <div class="col-lg-5">
-                        <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_4.jpg') }}" alt=""
-                            class="img-fluid">
-                    </div>
-
-                    <div class="col-lg-6">
-
-                        <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up"
-                            data-aos-delay="200">
-                            <div>
-                                <h4>Үүсгэн Байгуулагдсан Он</h4>
-                                <p>{{ $university->established_at }}</p>
-                            </div>
-                        </div><!-- End Features Item-->
-
-                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-                            <div>
-                                <h4>Нийт Оюутны Тоо</h4>
-                                <p>{{ $university->student_population }}</p>
-                            </div>
-                        </div><!-- End Features Item-->
-
-                        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-                            <div>
-                                <h4>Нийт Багш Нарын Тоо</h4>
-                                <p>{{ $university->faculty_count }}</p>
-                            </div>
-                        </div><!-- End Features Item-->
-
-                    </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        
-        
-        <section id="call-to-action" class="call-to-action section dark-background">
-
-            <img src="{{ asset('assets/img/wallpaperflare.com_wallpaper_3.jpg') }}" alt="">
-
-            <div class="container">
-                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="col-xl-10">
-                        <div class="text-center">
-                            <h3>үндсэн хуудас</h3>
-                            <p>Хэрэв та илүү олон их дээд сургуулийн сонголтуудыг харахыг хүсэж байвал, 
-                                илүү дэлгэрэнгүй мэдээлэлтэй танилцахын тулд үндсэн хуудас руу буцаж, 
-                                сонголтоо өргөжүүлнэ үү.</p>
-                            <a class="cta-btn" href="{{ route('universities.index') }}">үндсэн хуудас</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
         <section id="contact" class="contact section">
 
             <!-- Section Title -->
@@ -290,9 +169,10 @@
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
                             <i class="bi bi-globe flex-shrink-0"></i> <!-- Use an appropriate icon for the website -->
                             <div>
-                                 <h3>Вебсайт руу орох</h3>
+                                <h3>Вебсайт руу орох</h3>
                                 <p>Вэбсайт: <a href="{{ $university->website }}"
-                                    target="_blank">{{ $university->website }}</a></p> <!-- Link to the university's website -->
+                                        target="_blank">{{ $university->website }}</a></p>
+                                <!-- Link to the university's website -->
                             </div>
                         </div>
 
@@ -334,13 +214,9 @@
                             </div>
                         </form>
                     </div><!-- End Contact Form -->
-
                 </div>
-
             </div>
-
-        </section>        
-
+        </section>
     </main>
 
 
